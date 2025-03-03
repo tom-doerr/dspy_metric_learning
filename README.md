@@ -1,14 +1,14 @@
-# DSPy Metric Learning
-
 <div align="center">
+
+# DSPy Metric Learning
 
 ![DSPy Metric Learning](https://img.shields.io/badge/DSPy-Metric%20Learning-blue?style=for-the-badge&logo=python&logoColor=white)
 
-[![Test Status](https://img.shields.io/badge/tests-passing-brightgreen?style=flat-square)](https://github.com/yourusername/dspy-metric-learning)
-[![Coverage](https://img.shields.io/badge/coverage-92%25-brightgreen?style=flat-square)](https://github.com/yourusername/dspy-metric-learning)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/python-3.8+-blue.svg?style=flat-square&logo=python&logoColor=white)](https://www.python.org)
-[![DSPy](https://img.shields.io/badge/DSPy-2.0.0+-purple.svg?style=flat-square)](https://github.com/stanfordnlp/dspy)
+[![Test Status](https://img.shields.io/badge/tests-passing-4CAF50?style=for-the-badge&logo=pytest&logoColor=white)](https://github.com/yourusername/dspy-metric-learning)
+[![Coverage](https://img.shields.io/badge/coverage-92%25-4CAF50?style=for-the-badge&logo=codecov&logoColor=white)](https://github.com/yourusername/dspy-metric-learning)
+[![License: MIT](https://img.shields.io/badge/License-MIT-FF9800?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/python-3.8+-2196F3?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
+[![DSPy](https://img.shields.io/badge/DSPy-2.0.0+-9C27B0?style=for-the-badge&logo=python&logoColor=white)](https://github.com/stanfordnlp/dspy)
 
 <p align="center">
 A powerful package for learning and optimizing metric functions for DSPy, leveraging language models to create better evaluation metrics for your generative AI applications.

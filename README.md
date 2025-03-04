@@ -4,9 +4,9 @@
 
 ![DSPy Metric Learning](https://img.shields.io/badge/DSPy-Metric%20Learning-blue?style=for-the-badge&logo=python&logoColor=white)
 
-[![Status: Pre-Alpha](https://img.shields.io/badge/Status-Pre--Alpha-F44336?style=for-the-badge&logo=statuspage&logoColor=white)](https://github.com/yourusername/dspy-metric-learning)
-[![Test Status](https://img.shields.io/badge/tests-passing-4CAF50?style=for-the-badge&logo=pytest&logoColor=white)](https://github.com/yourusername/dspy-metric-learning)
-[![Coverage](https://img.shields.io/badge/coverage-92%25-4CAF50?style=for-the-badge&logo=codecov&logoColor=white)](https://github.com/yourusername/dspy-metric-learning)
+[![Status: Pre-Alpha](https://img.shields.io/badge/Status-Pre--Alpha-F44336?style=for-the-badge&logo=statuspage&logoColor=white)](https://github.com/tom-doerr/dspy_metric_learning)
+[![Test Status](https://img.shields.io/badge/tests-passing-4CAF50?style=for-the-badge&logo=pytest&logoColor=white)](https://github.com/tom-doerr/dspy_metric_learning)
+[![Coverage](https://img.shields.io/badge/coverage-92%25-4CAF50?style=for-the-badge&logo=codecov&logoColor=white)](https://github.com/tom-doerr/dspy_metric_learning)
 [![License: MIT](https://img.shields.io/badge/License-MIT-FF9800?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.8+-2196F3?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 [![DSPy](https://img.shields.io/badge/DSPy-2.0.0+-9C27B0?style=for-the-badge&logo=python&logoColor=white)](https://github.com/stanfordnlp/dspy)
@@ -61,9 +61,19 @@ You can also install directly from the repository for the latest development ver
 <div align="center">
 
 ```bash
-git clone https://github.com/yourusername/dspy-metric-learning.git
-cd dspy-metric-learning
+git clone https://github.com/tom-doerr/dspy_metric_learning.git
+cd dspy_metric_learning
 pip install -e .
+```
+
+</div>
+
+To install a specific version:
+
+<div align="center">
+
+```bash
+pip install dspy-metric-learning==0.1.0-pre.1
 ```
 
 </div>

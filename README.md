@@ -4,6 +4,7 @@
 
 ![DSPy Metric Learning](https://img.shields.io/badge/DSPy-Metric%20Learning-blue?style=for-the-badge&logo=python&logoColor=white)
 
+[![Status: Pre-Alpha](https://img.shields.io/badge/Status-Pre--Alpha-F44336?style=for-the-badge&logo=statuspage&logoColor=white)](https://github.com/yourusername/dspy-metric-learning)
 [![Test Status](https://img.shields.io/badge/tests-passing-4CAF50?style=for-the-badge&logo=pytest&logoColor=white)](https://github.com/yourusername/dspy-metric-learning)
 [![Coverage](https://img.shields.io/badge/coverage-92%25-4CAF50?style=for-the-badge&logo=codecov&logoColor=white)](https://github.com/yourusername/dspy-metric-learning)
 [![License: MIT](https://img.shields.io/badge/License-MIT-FF9800?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
@@ -13,6 +14,8 @@
 <p align="center">
 A powerful package for learning and optimizing metric functions for DSPy, leveraging language models to create better evaluation metrics for your generative AI applications.
 </p>
+
+> **Note:** This package is currently in pre-alpha stage. The API is likely to change significantly in future releases.
 
 </div>
 
@@ -45,13 +48,15 @@ A powerful package for learning and optimizing metric functions for DSPy, levera
 
 <div align="center">
 
+> ⚠️ **Pre-Alpha Release**: This package is in very early development. The API is unstable and major architectural changes are expected.
+
 ```bash
 pip install dspy-metric-learning
 ```
 
 </div>
 
-You can also install directly from the repository:
+You can also install directly from the repository for the latest development version:
 
 <div align="center">
 

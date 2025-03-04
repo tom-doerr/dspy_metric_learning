@@ -1,9 +1,20 @@
 [tool.poetry]
 name = "dspy-metric-learning"
-version = "0.1.0"
+version = "0.1.0-pre.1"
 description = "A DSPy metric function learning package"
 authors = ["Your Name <your.email@example.com>"]
 readme = "README.md"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"

@@ -2,6 +2,7 @@ from .metric_module import MetricModule
 from .data_manager import MetricDataManager
 from .repl_interface import label_instances
 from .optimization import optimize_metric_module, get_labeled_dataset, MetricEvaluator
+from .learner import MetricLearner
 
 __all__ = [
     'MetricModule',
@@ -10,4 +11,5 @@ __all__ = [
     'optimize_metric_module',
     'get_labeled_dataset',
     'MetricEvaluator',
+    'MetricLearner',
 ]

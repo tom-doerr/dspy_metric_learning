@@ -174,9 +174,42 @@ The `examples/` directory contains several example scripts:
 | Example | Description |
 |---------|-------------|
 | `basic_usage.py` | Simple demonstration of core functionality |
+| `openai_example.py` | Using DSPy Metric Learning with OpenAI's API |
+| `anthropic_example.py` | Using DSPy Metric Learning with Anthropic's Claude API |
+| `ollama_example.py` | Using DSPy Metric Learning with local LLMs via Ollama |
 | `multiple_metrics.py` | Using multiple specialized metrics |
 | `streamlit_app.py` | Interactive web interface for labeling and optimization |
 | `complete_workflow.py` | End-to-end workflow from data collection to optimization |
+
+</div>
+
+Run the OpenAI example (requires API key):
+
+<div align="center">
+
+```bash
+OPENAI_API_KEY=your_key_here python examples/openai_example.py
+```
+
+</div>
+
+Run the Anthropic example (requires API key):
+
+<div align="center">
+
+```bash
+ANTHROPIC_API_KEY=your_key_here python examples/anthropic_example.py
+```
+
+</div>
+
+Run the Ollama example (requires Ollama running locally):
+
+<div align="center">
+
+```bash
+python examples/ollama_example.py
+```
 
 </div>
 

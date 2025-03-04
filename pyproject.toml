@@ -2,8 +2,13 @@
 name = "dspy-metric-learning"
 version = "0.1.0-pre.1"
 description = "A DSPy metric function learning package"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Tom Doerr <tomdoerr96@gmail.com>"]
 readme = "README.md"
+license = "MIT"
+repository = "https://github.com/tom-doerr/dspy_metric_learning"
+homepage = "https://github.com/tom-doerr/dspy_metric_learning"
+keywords = ["dspy", "metrics", "machine learning", "nlp", "language models"]
+packages = [{include = "metric_learner"}]
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Developers",

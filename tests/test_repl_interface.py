@@ -109,5 +109,72 @@ class TestREPLInterface(unittest.TestCase):
         # Verify that update_user_score was not called
         self.data_manager.update_user_score.assert_not_called()
 
+    @patch('builtins.input')
+    def test_label_instances_with_gold_and_score(self, mock_input):
+        """Test displaying gold and model score."""
+        # Set up the data manager to return one unlabeled instance with gold and score
+        instance_with_gold_and_score = {
+            "id": "3", 
+            "datetime": "2023-01-03", 
+            "input": "test input 3", 
+            "prediction": "test pred 3", 
+            "gold": "test gold 3",
+            "score": 0.9,
+            "user_score": None
+        }
+        self.data_manager.load_instances.return_value = [instance_with_gold_and_score]
+        
+        # Set up the mock input to return a valid score and then 'q' to quit
+        mock_input.side_effect = ["0.7", "q"]
+        
+        # Run the function
+        with patch('sys.stdout', new=io.StringIO()) as fake_out:
+            label_instances(self.data_manager)
+            output = fake_out.getvalue()
+        
+        # Verify that gold and model score were displayed
+        self.assertIn("Gold: test gold 3", output)
+        self.assertIn("Model score: 0.9", output)
+        
+    @patch('builtins.input')
+    def test_label_instances_help_command(self, mock_input):
+        """Test the help command in the REPL."""
+        # Set up the data manager to return one unlabeled instance
+        self.data_manager.load_instances.return_value = self.instances
+        
+        # Set up the mock input to return 'help', then a valid score, then 'q' to quit
+        mock_input.side_effect = ["help", "0.7", "q"]
+        
+        # Run the function
+        with patch('sys.stdout', new=io.StringIO()) as fake_out:
+            label_instances(self.data_manager)
+            output = fake_out.getvalue()
+        
+        # Verify that help text was displayed
+        self.assertIn("Enter a score between 0 and 1", output)
+        self.assertIn("skip: Skip this instance", output)
+        self.assertIn("exit: Exit the labeling session", output)
+        self.assertIn("help: Show this help message", output)
+        
+    @patch('builtins.input')
+    def test_label_instances_failed_save(self, mock_input):
+        """Test handling of failed score saving."""
+        # Set up the data manager to return one unlabeled instance
+        self.data_manager.load_instances.return_value = self.instances
+        
+        # Set up update_user_score to return False (failed save)
+        self.data_manager.update_user_score.return_value = False
+        
+        # Set up the mock input to return a valid score and then 'q' to quit
+        mock_input.side_effect = ["0.7", "q"]
+        
+        # Run the function
+        with patch('sys.stdout', new=io.StringIO()) as fake_out:
+            label_instances(self.data_manager)
+            output = fake_out.getvalue()
+        
+        # Verify that error message was displayed
+        self.assertIn("Failed to save score", output)
+
 if __name__ == '__main__':
     unittest.main()
